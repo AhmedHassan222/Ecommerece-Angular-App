@@ -1,0 +1,32 @@
+section {
+    .box {
+        transition: all 0.3s;
+        img {
+            transition: all 0.2s;
+        }
+        &:hover {
+            img {
+                transform: scale(1.02);
+            }
+        }
+    }
+}
+
+header {
+    background-image: url(../../assets/background.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .layer {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .btn-shop {
+        background-color: rgb(16, 124, 160);
+        border: none;
+        padding-inline: 30px;
+        padding-block: 10px;
+        color: white;
+        width: fit-content;
+    }
+}

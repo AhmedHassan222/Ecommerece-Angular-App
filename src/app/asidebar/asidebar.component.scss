@@ -1,0 +1,26 @@
+    aside {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 6666666666666666666666666666666666666666666666666;
+        overflow: auto;
+        background-color: white;
+    }
+    
+    section {
+        .btn-add-to-cart {
+            padding-block: 7px;
+            padding-inline: 17px;
+            color: white;
+            background-color: rgb(16, 124, 160);
+            width: 100%;
+            transition: all 0.5s;
+            border: none;
+        }
+        .text-content {
+            height: 100px;
+            overflow: hidden;
+        }
+    }

@@ -1,0 +1,7 @@
+.top {
+    transition: all 0.2s;
+    &:hover {
+        background-color: rgb(230, 230, 230);
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,38 @@
+<section class="container py-3">
+    <div class="row g-3 justify-content-center">
+        @for (product of products; track product.id) {
+        <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="bg-white p-3">
+                <img [src]="product.img" alt="" class="w-100">
+                <div>
+                    <p class="my-2 text-content">{{product.name}}</p>
+                    <div class="d-flex justify-content-between my-2">
+                        <p class="fs-5">E£ {{product.price}}</p>
+                        <i (click)="addItemToFavarite(product)" class="fa-regular fa-heart fs-5"></i>
+                    </div>
+                    <button class="btn-add-to-cart">Add to cart</button>
+                </div>
+            </div>
+        </div> } @empty { @for (item of items; track $index) {
+        <div class="col-sm-12 col-md-6 col-lg-3">
+
+            <div class="card" aria-hidden="true">
+                <img src="../../assets/fakeImage.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title placeholder-glow">
+                        <span class="placeholder col-6"></span>
+                    </h5>
+                    <p class="card-text placeholder-glow">
+                        <span class="placeholder col-7"></span>
+                        <span class="placeholder col-4"></span>
+                        <span class="placeholder col-4"></span>
+                        <span class="placeholder col-6"></span>
+                        <span class="placeholder col-8"></span>
+                    </p>
+                    <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+                </div>
+            </div>
+        </div> } }
+
+    </div>
+</section>

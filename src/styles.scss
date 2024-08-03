@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    background-color: whitesmoke;
+    font-family: 'Lora', serif;
+    input {
+        &:focus {
+            outline: none;
+        }
+    }
+}

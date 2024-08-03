@@ -1,0 +1,38 @@
+<section class="container py-5">
+    <div class="row g-3 justify-content-center">
+        @for (product of productsDetils; track product.id) {
+        <div class="col-sm-12 col-md-5">
+            <img [src]="product.img" alt="" class="w-100">
+        </div>
+        <div class="col-sm-12 col-md-7">
+            <p class="my-2">{{product.name}}</p>
+            <p class="fs-5">E£ {{product.price}}</p>
+            <div class="d-flex">
+                <i class="btn-add-to-cart me-2 fa fa-shopping-bag rounded-2"></i>
+                <i class="fa-regular fa-heart fs-5 btn-add-to-cart rounded-2"></i>
+            </div>
+        </div> } @empty { @for (item of items; track $index) {
+        <div class="col-sm-12 col-md-6 ">
+            <img src="../../assets/fakeImage.png" class="card-img-top" alt="...">
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="card" aria-hidden="true">
+                <div class="card-body">
+                    <h5 class="card-title placeholder-glow">
+                        <span class="placeholder col-6"></span>
+                    </h5>
+                    <p class="card-text placeholder-glow">
+                        <span class="placeholder col-7"></span>
+                        <span class="placeholder col-4"></span>
+                        <span class="placeholder col-4"></span>
+                        <span class="placeholder col-6"></span>
+                        <span class="placeholder col-8"></span>
+                    </p>
+                    <a class="btn btn-primary disabled placeholder col-3 me-2" aria-disabled="true"></a>
+                    <a class="btn btn-primary disabled placeholder col-3" aria-disabled="true"></a>
+                </div>
+            </div>
+        </div> } }
+
+    </div>
+</section>

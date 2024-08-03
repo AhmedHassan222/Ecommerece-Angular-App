@@ -1,0 +1,23 @@
+nav {
+    overflow-x: scroll;
+    .nav-link {
+        transition: all 0.2s;
+        &:hover {
+            cursor: pointer;
+            color: #ff3c20 !important;
+        }
+    }
+}
+
+nav::-webkit-scrollbar {
+    background-color: #e7e7e7;
+}
+
+nav::-webkit-scrollbar-thumb {
+    background-color: #b0b0b0;
+    border-radius: 10px;
+}
+
+nav::-webkit-scrollbar {
+    height: 5px;
+}
